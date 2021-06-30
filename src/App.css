@@ -1,0 +1,87 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  background-color: white;
+  border-radius: 20px;
+  width: 65vw;
+  height: 65vh;
+  position: relative;
+  background-image: url(illustration-woman-online-desktop.svg), url(bg-pattern-desktop.svg) ;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 50% left -80px, right 500px top 65%;
+}
+
+.pattern {
+  width: 50%;
+  position: absolute;
+  left: -30%;
+  top: -30%;
+}
+
+.illustrationBox {
+  position: absolute;
+  top: 40%;
+  left: -92px;
+}
+
+.illustrationWoman {
+  position: absolute;
+  top:30%;
+  left: 0;
+}
+
+.Container {
+  margin-left: 50%;
+  padding: 3rem;
+}
+
+.Accordion {
+  border-bottom: hsl(240, 5%, 91%) 1px solid;
+  padding: 1rem 0.5rem 1rem 0;
+}
+
+.Question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  color: hsl(237, 12%, 33%);
+}
+.Question:hover {
+  cursor: pointer;
+  color: #F47B56;
+}
+.Title.Active {
+  font-weight: 700;
+}
+
+.Arrow.Active {
+  transform: rotate(180deg);
+}
+
+.Answer {
+  margin: 16px 0;
+  color: hsl(240, 6%, 50%);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 375px) {
+  .App {
+    width: 100vw;
+    height: 100vh;
+  }
+}
