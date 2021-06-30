@@ -1,6 +1,5 @@
 import arrow from './icon-arrow-down.svg';
 import illustrationBox from './illustration-box-desktop.svg';
-import illustrationWoman from './illustration-woman-online-desktop.svg';
 import './App.css';
 import { useState } from 'react';
 const faq = [
@@ -45,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <div className="Card">
-        <img className="illustrationBox" src={illustrationBox} />
+        <img className="illustrationBox" src={illustrationBox} alt="box with @ sign"/>
 
         <div className="Container">
           <h1>FAQ</h1>
@@ -68,7 +67,7 @@ function App() {
       
       </div>
       <div className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
         Coded by <a href="github.com/yabets">Yabets</a>.
       </div>
     </div>
