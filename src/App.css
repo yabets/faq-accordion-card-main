@@ -13,7 +13,8 @@
   width: 65vw;
   height: 65vh;
   position: relative;
-  background-image: url(illustration-woman-online-desktop.svg), url(bg-pattern-desktop.svg) ;
+  background-image: url(illustration-woman-online-desktop.svg),
+    url(bg-pattern-desktop.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top 50% left -80px, right 500px top 65%;
 }
@@ -33,7 +34,7 @@
 
 .illustrationWoman {
   position: absolute;
-  top:30%;
+  top: 30%;
   left: 0;
 }
 
@@ -55,7 +56,7 @@
 }
 .Question:hover {
   cursor: pointer;
-  color: #F47B56;
+  color: #f47b56;
 }
 .Title.Active {
   font-weight: 700;
@@ -70,18 +71,42 @@
   color: hsl(240, 6%, 50%);
 }
 
-.attribution { 
-  font-size: 11px; text-align: center; 
+.attribution {
+  font-size: 11px;
+  text-align: center;
   position: fixed;
   bottom: 0;
   width: 100vw;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
-
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 @media (max-width: 375px) {
   .App {
     width: 100vw;
     height: 100vh;
+  }
+  .Card {
+    position: relative;
+    background-image: url(bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: auto;
+    width: auto;
+  }
+  .Container {
+    margin: 32px 4px;
+  }
+  .illustrationBox {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+  }
+
+  .illustrationWoman {
+    position: absolute;
+    top: 30%;
+    left: 0;
   }
 }
